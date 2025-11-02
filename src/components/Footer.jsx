@@ -24,6 +24,7 @@ const Footer = ({theme}) => {
 
             <ul className='flex gap-8'>
                 <li><a className='hover:text-primary' href="#hero">Home</a></li>
+                <li><a className='hover:text-primary' href="#products">Products</a></li>
                 <li><a className='hover:text-primary' href="#services">Services</a></li>
                 <li><a className='hover:text-primary' href="#our-work">Our Work</a></li>
                 <li><a className='hover:text-primary' href="#contact-us">Contact Us</a></li>
@@ -35,12 +36,13 @@ const Footer = ({theme}) => {
         transition={{ duration: 0.6, delay: 0.3 }}
         viewport={{ once: true }}
         className='text-gray-600 dark:text-gray-400'>
-            <h3 className='font-semibold'>Subscribe to our newsletter</h3>
-            <p className='text-sm  mt-2 mb-6'>The latest news, articles, and resources, sent to your inbox weekly.</p>
-            <div className='flex gap-2 text-sm'>
-                <input type="email" placeholder='Enter your email' className='w-full p-3 text-sm outline-none rounded dark:text-gray-200 bg-transparent border border-gray-300 dark:border-gray-500'/>
-                <button className='bg-primary text-white rounded px-6'>Subscribe</button>
-            </div>
+            <h3 className='font-semibold'>Products</h3>
+            <ul className='space-y-2 mt-4'>
+                <li><a className='hover:text-primary' href="#product1">Product 1</a></li>
+                <li><a className='hover:text-primary' href="#product2">Product 2</a></li>
+                <li><a className='hover:text-primary' href="#product3">Product 3</a></li>
+                <li><a className='hover:text-primary' href="#product4">Product 4</a></li>
+            </ul>
         </motion.div>
       </div>
       <hr className='border-gray-300 dark:border-gray-600  my-6'/>
@@ -52,7 +54,7 @@ const Footer = ({theme}) => {
     transition={{ duration: 0.5, delay: 0.4 }}
     viewport={{ once: true }}
       className='pb-6 text-sm text-gray-500 flex justify-center sm:justify-between gap-4 flex-wrap'>
-        <p>Copyright 2025 © GreatStack - All Right Reserved.</p>
+        <p>Copyright 2025 © Qubo.in - All Right Reserved.</p>
         <div className='flex items-center justify-between gap-4'>
             <img src={assets.facebook_icon} alt="" />
             <img src={assets.twitter_icon} alt="" />
