@@ -6,14 +6,16 @@ import { motion } from "motion/react"
 const Navbar = ({theme, setTheme}) => {
 
     const [sidebarOpen, setSidebarOpen] = useState(false)
+    const [popupOpen, setPopupOpen] = useState(false) // State for popup visibility
 
   return (
-    <motion.div
-    initial={{opacity: 0, y: -50}}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{duration: 0.6, ease: 'easeOut'}}
-    className='flex justify-between items-center px-4 sm:px-12 lg:px-24 xl:px-40 py-4 sticky top-0 z-20 backdrop-blur-xl font-medium bg-white/50 dark:bg-gray-900/70'>
-      
+    <>
+      <motion.div
+        initial={{opacity: 0, y: -50}}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{duration: 0.6, ease: 'easeOut'}}
+        className='flex justify-between items-center px-4 sm:px-12 lg:px-24 xl:px-40 py-4 sticky top-0 z-20 backdrop-blur-xl font-medium bg-white/50 dark:bg-gray-900/70'>
+        
         <img 
           src={theme === 'dark' ? assets.logo_dark || 'https://via.placeholder.com/150' : assets.logo} 
           className='w-32 sm:w-40' 
@@ -37,12 +39,40 @@ const Navbar = ({theme, setTheme}) => {
 
             <img src={theme === 'dark' ? assets.menu_icon_dark : assets.menu_icon} alt="" onClick={()=> setSidebarOpen(true)} className='w-8 sm:hidden'/>
 
-            <a href="#contact-us" className='text-sm max-sm:hidden flex items-center gap-2 bg-primary text-white px-6 py-2 rounded-full cursor-pointer hover:scale-103 transition-all'>
+            <button 
+              onClick={() => setPopupOpen(true)} 
+              className='text-sm max-sm:hidden flex items-center gap-2 bg-primary text-white px-6 py-2 rounded-full cursor-pointer hover:scale-103 transition-all'>
                 Connect <img src={assets.arrow_icon} width={14} alt="" />
-            </a>
+            </button>
         </div>
+      </motion.div>
 
-    </motion.div>
+      {/* Popup Container */}
+      {popupOpen && (
+        <div 
+          className='fixed inset-0 flex items-center justify-center z-30 bg-black/40 backdrop-blur-md'
+          onClick={() => setPopupOpen(false)} // Close popup when clicking outside
+        >
+          <div 
+            className='bg-white/70 dark:bg-gray-900/70 p-10 rounded-lg shadow-lg w-96 sm:w-[550px] flex flex-col gap-8'
+            onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside
+          >
+            <button 
+              className='absolute top-4 right-4 text-gray-700 dark:text-white'
+              onClick={() => setPopupOpen(false)}
+            >
+              ✖
+            </button>
+            <div className='grid grid-cols-2 gap-6'>
+              <button className='bg-primary text-white px-6 py-8 rounded-lg text-center'>Call Us</button>
+              <button className='bg-primary text-white px-6 py-8 rounded-lg text-center'>Connect with WhatsApp</button>
+              <button className='bg-primary text-white px-6 py-8 rounded-lg text-center'>Check with Instagram</button>
+              <button className='bg-primary text-white px-6 py-8 rounded-lg text-center'>Quote Us</button>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
   )
 }
 

@@ -13,7 +13,7 @@ const Hero = () => {
         viewport={{ once: true }}
         className='inline-flex items-center gap-2 border border-gray-300 p-1.5 pr-4 rounded-full'>
             <img className='w-20' src={assets.group_profile} alt="" />
-            <p className='text-xs font-medium'>Trusted by 10k+ people</p>
+            <p className='text-xs font-medium'>Join our community</p>
         </motion.div>
 
         <motion.h1
@@ -43,7 +43,7 @@ const Hero = () => {
       
       {/* WhatsApp Floating Button */}
       <a 
-        href="https://wa.me/8838362439" 
+        href="https://wa.me/918838362439" 
         target="_blank" 
         rel="noopener noreferrer" 
         className="fixed bottom-4 right-4 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all"
