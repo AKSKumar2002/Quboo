@@ -7,8 +7,8 @@ const OurWork = () => {
 
     const workData = [
         {
-            title: 'Mobile app marketing',
-            description: 'We turn bold ideas into powerful digital solutions that connect, engage...',
+            title: 'Ecommerce Platform',
+            description: 'An ergonmically designed ecommerce website that made a bond between client with us !',
             image: assets.work_mobile_app
         },
         {

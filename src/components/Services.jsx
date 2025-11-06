@@ -8,22 +8,22 @@ const Services = () => {
 
     const servicesData = [
         {
-          title: 'Advertising',
+          title: 'Saas (Softwares services)',
           description: 'We turn bold ideas into powerful digital solutions that connect, engage...',
           icon: assets.ads_icon
         },
         {
-          title: 'Content marketing',
+          title: 'Digital optimized tools',
           description: 'We help you execute your plan and deliver results.',
           icon: assets.marketing_icon
         },
         {
-            title: 'Content writing',
+            title: 'Automation',
             description: 'We help you create a marketing strategy that drives results.',
             icon: assets.content_icon,
         },
         {
-            title: 'Social media',
+            title: 'Socialized marketing',
             description: 'We help you build a strong social media presence and engage with your audience.',
             icon: assets.social_icon,
         },
