@@ -13,13 +13,13 @@ const OurWork = () => {
             url: 'http://farmpickshope.vercel.app/'
         },
         {
-            title: 'Dashboard management',
+            title: 'Network Provider',
             description: 'We help you execute your plan and deliver results.',
             image: assets.work_dashboard_management,
             url: 'https://fiberflow.co.in/'
         },
         {
-            title: 'IT Services',
+            title: 'Infra Business',
             description: 'We help you create a marketing strategy that drives results.',
             image: assets.work_fitness_app,
             url: 'https://dot-decimals-1.onrender.com/'

@@ -14,7 +14,7 @@ import marketing_icon from './marketing_icon.svg'
 import social_icon from './social_icon.svg'
 import menu_icon from './menu_icon.svg'
 import close_icon from './close_icon.svg'
-import work_mobile_app from './work_mobile_app.jpg'
+import work_mobile_app from './work_mobile_app.png'
 import work_fitness_app from './work_fitness_app.png'
 import work_dashboard_management from './work_dashboard_management.png'
 import email_icon from './email_icon.svg'
@@ -72,11 +72,11 @@ export default assets
 
 export const teamData = [
   { name: 'Ajith Kumar', title: 'Founder & Dev', image: 'https://images.unsplash.com/photo-1750535135451-7c20e24b60c1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=580' },
-  { name: 'Arun Krishna', title: 'Developer', image: 'https://images.unsplash.com/photo-1740252117070-7aa2955b25f8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=580' },
+  { name: 'Arun Krishna', title: 'Developer and admin', image: 'https://images.unsplash.com/photo-1740252117070-7aa2955b25f8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=580' },
   { name: 'Mohamad Salman', title: 'Promotion and Socialize', image: 'https://plus.unsplash.com/premium_photo-1739786996060-2769f1ded135?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=580' },
-  { name: 'Raj Kumar', title: 'BDE & sales', image: 'https://images.unsplash.com/photo-1740252117044-2af197eea287?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=580' },
-  { name: 'Karthik', title: 'Content marketer', image: 'https://plus.unsplash.com/premium_photo-1739178656557-16b949fea186?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774' },
-  { name: 'Mouli Vikas', title: 'Content writer', image: 'https://plus.unsplash.com/premium_photo-1740097670001-28363fa53ee3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774' },
-  { name: 'Raja', title: 'Performance manager', image: 'https://plus.unsplash.com/premium_photo-1739178656567-068b26a4b979?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774' },
-  { name: 'Sunil', title: 'Senior writer', image: 'https://images.unsplash.com/photo-1740252117012-bb53ad05e370?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=580' },
+  { name: 'Raj Kumar', title: 'Business development', image: 'https://images.unsplash.com/photo-1740252117044-2af197eea287?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=580' },
+  { name: 'Karthik', title: 'Marketing', image: 'https://plus.unsplash.com/premium_photo-1739178656557-16b949fea186?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774' },
+  { name: 'Mouli Vikas', title: 'React & Flutter Developer', image: 'https://plus.unsplash.com/premium_photo-1740097670001-28363fa53ee3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774' },
+  { name: 'Ayyanar Raja', title: 'Performance manager', image: 'https://plus.unsplash.com/premium_photo-1739178656567-068b26a4b979?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774' },
+  { name: 'Hemanth', title: 'Content writer', image: 'https://images.unsplash.com/photo-1740252117012-bb53ad05e370?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=580' },
 ]
