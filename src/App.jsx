@@ -51,7 +51,7 @@ const App = () => {
  
 
   return (
-    <div className='dark:bg-black relative'>
+    <div className='dark:bg-black relative overflow-x-hidden max-w-full'>
       <Toaster />
       <Navbar theme={theme} setTheme={setTheme}/>
       <Hero />
