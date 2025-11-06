@@ -9,17 +9,20 @@ const OurWork = () => {
         {
             title: 'Ecommerce Platform',
             description: 'An ergonmically designed ecommerce website that made a bond between client with us !',
-            image: assets.work_mobile_app
+            image: assets.work_mobile_app,
+            url: 'http://farmpickshope.vercel.app/'
         },
         {
             title: 'Dashboard management',
             description: 'We help you execute your plan and deliver results.',
-            image: assets.work_dashboard_management
+            image: assets.work_dashboard_management,
+            url: 'https://fiberflow.co.in/'
         },
         {
-            title: 'Fitness app promotion',
+            title: 'IT Services',
             description: 'We help you create a marketing strategy that drives results.',
-            image: assets.work_fitness_app
+            image: assets.work_fitness_app,
+            url: 'https://dot-decimals-1.onrender.com/'
         },
     ]
 
@@ -32,7 +35,7 @@ const OurWork = () => {
     id='our-work' className='flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 text-gray-700 dark:text-white'>
       <Title title='Our latest work' desc='From strategy to execution, we craft digital solutions that move your business forward.'/>
 
-    <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-5xl'>
+    <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-5xl'>
         {
             workData.map((work, index)=>(
                 <motion.div 
@@ -41,7 +44,9 @@ const OurWork = () => {
                 transition={{ duration: 0.5, delay: index * 0.2 }}
                 viewport={{ once: true }}
                 key={index} className='hover:scale-102 duration-500 transition-all cursor-pointer'>
-                    <img src={work.image} className='w-full rounded-xl' alt="" />
+                    <a href={work.url} target="_blank" rel="noopener noreferrer">
+                        <img src={work.image} className='w-full h-64 object-cover rounded-xl' alt="" />
+                    </a>
                     <h3 className='mt-3 mb-2 text-lg font-semibold'>{work.title}</h3>
                     <p className='text-sm opacity-60 w-5/6'>{work.description}</p>
                 </motion.div>
