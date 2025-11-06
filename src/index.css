@@ -12,4 +12,6 @@
 
 @theme {
   --color-primary: #5044E5;
+  --color-primary-light: #4d8cea;
+  --gradient-primary: linear-gradient(to right, #5044E5, #4d8cea);
 }

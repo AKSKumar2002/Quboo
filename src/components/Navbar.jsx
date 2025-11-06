@@ -41,7 +41,7 @@ const Navbar = ({theme, setTheme}) => {
 
             <button 
               onClick={() => setPopupOpen(true)} 
-              className='text-sm max-sm:hidden flex items-center gap-2 bg-primary text-white px-6 py-2 rounded-full cursor-pointer hover:scale-103 transition-all'>
+              className='text-sm max-sm:hidden flex items-center gap-2 bg-gradient-to-r from-[#5044E5] to-[#4d8cea] text-white px-6 py-2 rounded-full cursor-pointer hover:scale-103 transition-all'>
                 Connect <img src={assets.arrow_icon} width={14} alt="" />
             </button>
         </div>
@@ -64,10 +64,10 @@ const Navbar = ({theme, setTheme}) => {
               ✖
             </button>
             <div className='grid grid-cols-2 gap-6'>
-              <button className='bg-primary text-white px-6 py-8 rounded-lg text-center'>Call Us</button>
-              <button className='bg-primary text-white px-6 py-8 rounded-lg text-center'>Connect with WhatsApp</button>
-              <button className='bg-primary text-white px-6 py-8 rounded-lg text-center'>Check with Instagram</button>
-              <button className='bg-primary text-white px-6 py-8 rounded-lg text-center'>Quote Us</button>
+              <button className='bg-gradient-to-r from-[#5044E5] to-[#4d8cea] text-white px-6 py-8 rounded-lg text-center'>Call Us</button>
+              <button className='bg-gradient-to-r from-[#5044E5] to-[#4d8cea] text-white px-6 py-8 rounded-lg text-center'>Connect with WhatsApp</button>
+              <button className='bg-gradient-to-r from-[#5044E5] to-[#4d8cea] text-white px-6 py-8 rounded-lg text-center'>Check with Instagram</button>
+              <button className='bg-gradient-to-r from-[#5044E5] to-[#4d8cea] text-white px-6 py-8 rounded-lg text-center'>Quote Us</button>
             </div>
           </div>
         </div>
