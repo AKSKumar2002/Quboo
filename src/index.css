@@ -10,12 +10,6 @@
   cursor: none;
 }
 
-html, body {
-  overflow-x: hidden;
-  width: 100%;
-  max-width: 100vw;
-}
-
 @theme {
   --color-primary: #5044E5;
 }
