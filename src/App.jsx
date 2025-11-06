@@ -8,11 +8,12 @@ import Teams from './components/Teams'
 import ContactUs from './components/ContactUs'
 import {Toaster} from 'react-hot-toast'
 import Footer from './components/Footer'
+import Loader from './components/Loader'
 
 const App = () => {
 
   const [theme, setTheme] = useState(localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light')
-
+  const [loading, setLoading] = useState(true)
 
   const dotRef = useRef(null)
   const outlineRef = useRef(null)
@@ -20,6 +21,15 @@ const App = () => {
   // Refs for custom cursor Position tracking
   const mouse = useRef({x: 0, y: 0})
   const position = useRef({x: 0, y: 0})
+
+  useEffect(()=>{
+    // Hide loader after 3 seconds
+    const timer = setTimeout(() => {
+      setLoading(false)
+    }, 3000)
+
+    return () => clearTimeout(timer)
+  },[])
 
   useEffect(()=>{
     const handleMouseMove = (e)=>{
@@ -49,6 +59,9 @@ const App = () => {
 
   },[])
  
+  if (loading) {
+    return <Loader theme={theme} />
+  }
 
   return (
     <div className='dark:bg-black relative'>

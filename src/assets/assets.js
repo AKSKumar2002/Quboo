@@ -29,7 +29,7 @@ import google_logo from './google_logo.svg'
 import menu_icon_dark from './menu_icon_dark.svg'
 import sun_icon from './sun_icon.svg'
 import moon_icon from './moon_icon.svg'
-
+import loader_logo from './loader_logo.png' // Add your loader logo image here
 
 export const company_logos = [
   microsoft_logo,
@@ -65,7 +65,8 @@ const assets = {
   logo_dark,
   menu_icon_dark,
   sun_icon,
-  moon_icon
+  moon_icon,
+  loader_logo
 }
 
 export default assets
