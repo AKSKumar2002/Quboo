@@ -54,6 +54,17 @@ const OurWork = () => {
         }
     </div>
 
+    {/* See More Button */}
+    <motion.button
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.4 }}
+      viewport={{ once: true }}
+      className='mt-6 px-8 py-3 rounded-full bg-gradient-to-r from-[#5044E5] to-[#4d8cea] text-white font-medium hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl'
+    >
+      See More
+    </motion.button>
+
     </motion.div>
   )
 }

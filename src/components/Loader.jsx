@@ -12,7 +12,7 @@ const Loader = ({theme}) => {
     >
       <div className='flex flex-col items-center gap-8'>
         {/* Logo and Text Container */}
-        <div className='flex items-center gap-4 overflow-hidden'>
+        <div className='flex items-center gap-1 overflow-hidden'>
           {/* Loader Logo */}
           <motion.img 
             initial={{ opacity: 0, scale: 0.8 }}
@@ -20,7 +20,7 @@ const Loader = ({theme}) => {
             transition={{ duration: 0.5 }}
             src={assets.loader_logo} 
             alt="Logo" 
-            className='w-32 sm:w-40' 
+            className='h-10 sm:h-12 w-auto' 
           />
           
           {/* Text coming from right */}
@@ -28,7 +28,7 @@ const Loader = ({theme}) => {
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className='text-2xl sm:text-3xl font-semibold text-gray-700 dark:text-white'
+            className='text-2xl sm:text-3xl font-medium text-gray-700 dark:text-white leading-none'
           >
             technologies
           </motion.p>
