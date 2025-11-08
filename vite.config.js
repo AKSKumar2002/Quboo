@@ -13,8 +13,4 @@ export default defineConfig({
       overlay: false,
     },
   },
-  build: {
-    outDir: 'dist',
-    sourcemap: false,
-  },
 })

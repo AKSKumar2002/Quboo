@@ -1,12 +1,73 @@
-# React + Vite
+# Quboo - Client-Server Architecture
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Professional fullstack application with separated client and server architecture.
 
-Currently, two official plugins are available:
+## 🏗️ Project Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
+Quboo/
+├── client/              # React frontend (Vite)
+│   ├── src/
+│   ├── public/
+│   ├── .env.example
+│   └── package.json
+├── server/              # Express backend
+│   ├── routes/
+│   ├── controllers/
+│   ├── .env.example
+│   └── package.json
+├── vercel.json          # Vercel deployment config
+└── package.json         # Root package for scripts
+```
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Install Dependencies
+```bash
+npm run install:all
+```
+
+### Development
+```bash
+npm run dev
+```
+This runs both client (port 3000) and server (port 5000) concurrently.
+
+Or run separately:
+```bash
+npm run client  # Frontend only
+npm run server  # Backend only
+```
+
+## 🔧 Environment Setup
+
+### Client (.env.local)
+```
+VITE_API_URL=http://localhost:5000
+```
+
+### Server (.env)
+```
+PORT=5000
+CLIENT_URL=http://localhost:3000
+EMAIL_USER=your-email@gmail.com
+EMAIL_PASS=your-app-password
+```
+
+## 📦 Deployment
+
+### Vercel (Recommended)
+1. Connect your GitHub repo to Vercel
+2. Set environment variables in Vercel dashboard
+3. Deploy automatically on push
+
+## 🎯 Features
+- ✅ Client-Server separation
+- ✅ Environment-based configuration
+- ✅ OTP email functionality
+- ✅ Vercel deployment ready
+- ✅ CORS configured
+- ✅ API proxy setup
+
+## 📝 License
+MIT
