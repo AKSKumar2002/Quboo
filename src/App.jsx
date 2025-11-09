@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import TrustedBy from './components/TrustedBy'
@@ -9,6 +10,8 @@ import ContactUs from './components/ContactUs'
 import {Toaster} from 'react-hot-toast'
 import Footer from './components/Footer'
 import Loader from './components/Loader'
+import Products from './pages/Products'
+import Admin from './pages/Admin'
 
 const App = () => {
 
@@ -64,25 +67,42 @@ const App = () => {
   }
 
   return (
-    <div className='dark:bg-black relative'>
-      <Toaster />
-      <Navbar theme={theme} setTheme={setTheme}/>
-      <Hero />
-      <TrustedBy />
-      <Services />
-      <OurWork />
-      <Teams />
-      <ContactUs />
-      <Footer theme={theme}/>
+    <Router>
+      <div className='dark:bg-black relative'>
+        <Toaster />
+        <Navbar theme={theme} setTheme={setTheme}/>
+        
+        <Routes>
+          {/* Home Page */}
+          <Route path="/" element={
+            <>
+              <Hero />
+              <TrustedBy />
+              <Services />
+              <OurWork />
+              <Teams />
+              <ContactUs />
+            </>
+          } />
+          
+          {/* Products Page */}
+          <Route path="/products" element={<Products />} />
+          
+          {/* Admin Page */}
+          <Route path="/admin" element={<Admin />} />
+        </Routes>
 
-    {/* Custom Cursor Ring */}
-    <div ref={outlineRef} className='fixed top-0 left-0 h-10 w-10 rounded-full border border-primary pointer-events-none z-[9999]'
-     style={{transition: 'transform 0.1s ease-out'}}></div>
+        <Footer theme={theme}/>
 
-    {/* Custom Cursor Dot */}
-    <div ref={dotRef} className='fixed top-0 left-0 h-3 w-3 rounded-full bg-primary pointer-events-none z-[9999]'></div>
+        {/* Custom Cursor Ring */}
+        <div ref={outlineRef} className='fixed top-0 left-0 h-10 w-10 rounded-full border border-primary pointer-events-none z-[9999]'
+         style={{transition: 'transform 0.1s ease-out'}}></div>
 
-    </div>
+        {/* Custom Cursor Dot */}
+        <div ref={dotRef} className='fixed top-0 left-0 h-3 w-3 rounded-full bg-primary pointer-events-none z-[9999]'></div>
+
+      </div>
+    </Router>
   )
 }
 
