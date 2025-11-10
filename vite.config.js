@@ -12,6 +12,13 @@ export default defineConfig({
     hmr: {
       overlay: false,
     },
+    proxy: {
+      '/api': {
+        target: 'https://quboo-backend.vercel.app',
+        changeOrigin: true,
+        secure: false,
+      }
+    }
   },
   build: {
     outDir: 'dist',

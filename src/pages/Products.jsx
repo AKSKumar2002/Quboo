@@ -5,7 +5,7 @@ import axios from 'axios'
 
 const API_URL = import.meta.env.PROD 
   ? '/api' 
-  : 'http://localhost:5173/api'
+  : 'https://quboo-backend.vercel.app'
 
 const Products = () => {
   const [activeSlide, setActiveSlide] = useState(0)

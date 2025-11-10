@@ -5,7 +5,7 @@ import toast from 'react-hot-toast'
 
 const API_URL = import.meta.env.PROD 
   ? '/api' 
-  : 'http://localhost:5173/api'
+  : 'https://quboo-backend.vercel.app/api'
 
 const Admin = () => {
   const [products, setProducts] = useState([])
