@@ -9,19 +9,20 @@ export default defineConfig({
     tailwindcss()
   ],
   server: {
-    hmr: {
-      overlay: false,
-    },
     proxy: {
       '/api': {
-        target: 'https://quboo-backend.vercel.app',
+        target: 'http://localhost:3000',
         changeOrigin: true,
-        secure: false,
       }
     }
   },
   build: {
     outDir: 'dist',
     sourcemap: false,
-  },
+    rollupOptions: {
+      output: {
+        manualChunks: undefined
+      }
+    }
+  }
 })
